@@ -4,7 +4,8 @@ pipeline {
   tools {
     maven 'maven3'
   }
-  stages{
+  
+ stages{
     stage("Maven Build"){
       steps{
         sh "mvn clean package"
